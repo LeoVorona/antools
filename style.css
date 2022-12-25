@@ -1,0 +1,497 @@
+* { 
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: #1E252B;
+    min-width: auto;
+}
+header{
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content:left;
+    align-items:center;
+    margin-top: 26px;
+    height: 48px;
+}
+.headerLogo{
+    font-weight: 600;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.headerImage{
+    margin-left: 157px;
+}
+nav{
+    margin-left: 257px;
+    font-weight: 500;
+    font-size: 16px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.topnav a{
+    color: rgba(255, 255, 255, 0.55);
+    padding-left: 42px;
+}
+.topnav a:hover{
+    color: white;
+}
+.account{
+    margin-left: 193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navLogin a{
+    color: rgba(255, 255, 255, 0.55);
+    opacity: 0.78;
+}
+.navLogin a:hover{
+    color:white;
+}
+.navSign{
+    display: flex;
+    background: #FF6E30;
+    border-radius: 8px;
+    width: 118px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 41px;
+}
+.navSign:hover{
+    background: #EA8C4F;
+} 
+.navSign a{
+    color: white;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.mainPreview{
+    margin-left: 108px;
+    display: flex;
+}
+.previewRightSide{
+    margin-top: 29px;
+}
+.previewLeftSide{
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mainPreview h1{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.9);
+
+}
+.dotColor{
+    color: #FF6E30;
+}
+.mainPreview p{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    font-size: 18px;  
+    line-height: 30px;
+}
+.mainPreview form{
+    margin-top: 60px;
+
+}
+.searchForm{
+    display: flex;
+    background: #283036;
+    width: 497.66px;
+    height: 64px;
+    border-radius: 15px;
+    align-items: center;
+}
+.search{
+    background: #283036;
+    padding-left: 13px;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 14px;
+}
+.searchForm input{
+    border: 0;
+    outline: none;
+}
+.submit{
+    background: #FF6E30;
+    padding: 12px 28px 12px 28px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 111px;
+}
+.submit:hover{
+    background: #587298;
+}
+.searchForm img{
+    padding-left: 18.06px;
+}
+.previewLogo{
+    display: flex;
+    margin:0 -8px;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: 110px;
+    
+}
+.previewLogo img{
+    margin:0 8px ;
+    height: 58px;
+    width: 58px;
+}
+.previewLogo img:hover{
+    background: #587298;  /* забавно получилось, отсавлю */
+}
+
+.mainTools{
+    text-align: center; /* чек */
+    margin-top: 200px;
+}
+.mainTools h1{
+
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 48px; 
+}
+.mainTools .description{
+
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+.cardsFirstLine{
+    
+    display: flex;
+    margin: 90px 0px 0 0px; /* margin: 90px 0px 0 108px; */
+    justify-content: center; /* чек  */
+} 
+.cardsSecondLine{
+    display: flex;
+    margin: 100px 0 0 0 ; /* margin: 90px 0px 0 108px; */
+    justify-content: center; /* чек */
+}
+.toolCard{
+    display: flex;
+    width: 392px;
+    height: 294px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 23px;
+    
+    padding-left: 33px;
+}
+.toolHeader{
+    display: flex;
+    margin-top: 33px;
+    margin-bottom: 30px;
+} 
+.toolTitle{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.toolHeader p{
+    margin-left: 20px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 165, 55, 0.55);
+}
+.toolHeader h2{
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 20px;
+    height: 36px;
+}
+
+.toolFooter{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+
+}
+.toolFooter img:first-child{
+    margin-right: 12px;
+}
+.visit{
+    display:inline-flex;
+    margin-left: 124px;
+    width: 106px;
+    height: 42px;
+    background: #FF6E30;
+    color: white;
+    align-items:center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.visit p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+
+}
+
+.toolBody{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.toolCard:hover{
+    background: rgba(40, 48, 54, 0.6);
+    backdrop-filter: blur(25px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 15px;
+}
+
+
+.loadMoreButton{
+    border-width:1px;
+    border-color: rgb(190,190,190);
+    border-style: solid;
+    border-radius: 8px;
+    width: 184px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 628px;
+    margin-top: 100px;
+}
+.loadMoreButton a{
+    font-weight: 500;
+    font-size: 20px;
+    color:#FF6E30;
+}
+.loadMoreButton:hover{
+    background:#283036;
+}
+
+
+.mainBrands{
+    width: 1224px;
+    height: 253px;
+    margin-top: 200px;
+    background: url(images/Rectangle\ 308.png);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    margin-left: 108px;
+    width: 1224px;
+    height: 253px;
+}
+.mainBrands h2{
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.brand{
+    margin-left: 82px;
+    padding-bottom: 55px;
+    justify-content: center;  
+}
+
+.brand a:not(:first-child){
+    margin-left: 107px;
+}
+
+.newcomerTools{
+    display: flex;
+}
+.newcomerToolsLeftSide{
+    margin-top: 220px;
+    width: 427px;
+    height: 300px;
+    margin-left: 108px;
+
+}
+.newcomerToolsLeftSide h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+}
+.newcomerToolsLeftSide p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 60px;
+
+}
+.exploreMoreButton{
+    background: #FF6E30;
+    width: 198px;
+    height: 58px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exploreMoreButton a{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.exploreMoreButton:hover{
+    background: #EA8C4F;
+}
+
+.newcomerToolsRigthSide{
+    margin-left: 197px;
+    display: flex;
+    flex-direction: column;
+
+} 
+.newcomerFirstLine{
+    display: flex;
+    flex-direction: row;
+    margin-top: 220px;
+}
+.newcomerSecondLine{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 288px;
+    height: 284px;
+    margin-right: 25px;
+}
+
+.card:hover{
+    background-color: rgba(40, 48, 54, 0.6);
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+}
+.card:hover{
+    background:url(images/hover.png)
+}
+
+.newcomerToolsRigthSide .card:hover{
+   margin-top: -10px;
+   margin-bottom: 10px;
+}
+.card:hover .visitButton{
+    background: #FF6E30;
+}
+
+.cardHeader{
+    width: 245px;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-bottom: 30px;
+}
+.cardHeader .headerTitle{
+    margin-left: 30px;
+}
+.cardHeader span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+}
+.cardHeader h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.78);
+}
+.cardBody{
+    width: 245px;
+    margin-bottom: 30px;
+}
+.cardBody p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.cardFooter{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.cardFooter img:not(:first-child){
+    margin-left: 12px;
+}
+.visitButton{
+    margin-left: 43px;
+    width: 106px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.visitButton a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.mainTestimonial{
+    margin-top: 200px;
+}
+.testimonialSlide{
+    display: flex;
+    margin-left: 295px;
+    text-align: left;   
+}
+
+.testimonialSlide .slideText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;   
+    letter-spacing: 0.015em;  
+    color: rgba(255, 255, 255, 0.78);
+    margin-left: -84px;   
+    margin-top: 128px;
+    text-align:left;
+    margin-right: 60px;
+}
