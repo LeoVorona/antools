@@ -16,28 +16,33 @@
     <link rel="stylesheet" href="slider.css">
     <!-- JavaScript -->
     <script src="slider.js" defer></script>
+    <script src="like.js" defer></script>
 </head>
 <body>
     <header>
-        <div class='headerImage'><img src="images/logo.png" alt="antools"></div>
         <div class="headerLogo">
-            <p>antools.</p>
+            <img src="images/logo.png" alt="antools">
+            <h2>antools.</h2>
         </div>
-        <nav>
-            <div class="topnav">
-                <a href="#">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">My Collections</a>
-                <a href="#">Blog</a>        
-            </div>           
-        </nav>
-        <div class="account">
-            <div class="navLogin">
-                <a href="#">Login</a>
-            </div>  
-            <div class="navSign">
-                <a href="#">Sign Up</a>
+        <div class="headerNav">
+            <a href="">Home</a>
+            <div class="dropdown">
+                <div class="headerMenu" href="#">
+                    <p>Categories</p>
+                    <img class="menuImageHover"src="images/chevron-down.png" alt="">
+                    <div class="dropdownContent">
+                        <div class="dropdownContentItem"><a href="">Simple</a></div>
+                        <div class="dropdownContentItem"><a href="">Сategory</a></div>
+                        <div class="dropdownContentItem"><a href="">Simple Category</a></div>
+                    </div>
+                </div>
             </div>
+            <a href="">My collections</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="account">
+            <a href="">Login</a>
+            <a class ="SignUpButton" href="">Sign Up</a>
         </div>
     </header>
     <main>
@@ -63,128 +68,144 @@
                 </div>        
         </div>  
         <div class="mainTools">
-            <h1>Most Popular Tools</h1>
-            <div class="description">Tools for the best Designers and Developers<br>
-                most popularly used in the world</div>
-                <!-- добавить контейнер -->
-                <div class="cardsFirstLine">
+            <h2>Most Popular Tools</h2>
+            <h6>Tools for the best Designers and Developers<br>
+                most popularly used in the world</h6>
+            <div class="toolsGallery">
+                <div class="toolsGallaryLineOne">
                     <div class="toolCard">
-                        <div class="toolHeader">
-                            <img src="images/vscode.svg">
-                            <div class="toolTitle">
-                                <h2>Visual Studio Code</h2>
-                                <p>Free</p>
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/figma.svg" alt="figma">
+                                <div class="toolCardTitle">
+                                    <h3><b>FIGMA</b></h3>
+                                    <span>Free</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton">Visit</div></a>
                             </div>
                         </div>
-                        <div class="toolBody" id="toolBody">
-                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
-                        </div>
-                        <div class="toolFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
-                            <div class="visit"><p>Visit</p></div>
-                        </div>
-                    </div>  
+                    </div>
                     <div class="toolCard">
-                        <div class="toolHeader">
-                            <img src="images/vscode.svg">
-                            <div class="toolTitle">
-                                <h2>Visual Studio Code</h2>
-                                <p>Free</p>
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/sketch.svg" alt="sketch">
+                                <div class="toolCardTitle">
+                                    <h3><b>Sketch</b></h3>
+                                    <span>Trial & Paid</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton">Visit</div></a>
                             </div>
                         </div>
-                        <div class="toolBody" id="toolBody">
-                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
-                        </div>
-                        <div class="toolFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
-                            <div class="visit"><p>Visit</p></div>
-                        </div>
-                    </div>  
+                    </div>
                     <div class="toolCard">
-                        <div class="toolHeader">
-                            <img src="images/vscode.svg">
-                            <div class="toolTitle">
-                                 <h2>Visual Studio Code</h2>
-                                 <p>Free</p>
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/vscode.svg" alt="Visual Studio Code">
+                                <div class="toolCardTitle">
+                                    <h3><b>Visual Studio Code</b></h3>
+                                    <span>Free</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton">Visit</div></a>
                             </div>
                         </div>
-                        <div class="toolBody" id="toolBody">
-                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
+                    </div>
+                </div>
+                <div class="toolsGallaryLineTwo">
+                    <div class="toolCard">
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/notion.png" alt="Notion">
+                                <div class="toolCardTitle">
+                                    <h3><b>Notion</b></h3>
+                                    <span>Free & Paid</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton"><b>Visit</b></div></a>
+                            </div>
                         </div>
-                        <div class="toolFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
-                            <div class="visit"><p>Visit</p></div>
+                    </div>
+                    <div class="toolCard">
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/grommet.svg" alt="Slack">
+                                <div class="toolCardTitle">
+                                    <h3><b>Slack</b></h3>
+                                    <span>Free & Paid</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton">Visit</div></a>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
+                    <div class="toolCard">
+                        <div class="toolCardContent">
+                            <div class="toolCardHeader">
+                                <img src="images/invision.svg" alt="Invision">
+                                <div class="toolCardTitle">
+                                    <h3><b>Invision</b></h3>
+                                    <span>Free & Paid</span>
+                                </div>
+                            </div>
+                            <div class="toolCardBody">
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.</p>
+                            </div>
+                            <div class="toolCardFooter">
+                                <div class="like"></div>
+                                <div class="folder"><img src="images/Group 1375.png" alt=""></div>
+                                <a href="#"><div class="toolVisitButton">Visit</div></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cardsSecondLine">
-                <div class="toolCard">
-                    <div class="toolHeader">
-                        <img src="images/vscode.svg">
-                        <div class="toolTitle">
-                            <h2>Visual Studio Code</h2>
-                            <p>Free</p>
-                        </div>
-                    </div>
-                    <div class="toolBody" id="toolBody">
-                        Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
-                    </div>
-                    <div class="toolFooter">
-                        <img src="images/Group 1376 (1).png" alt="">
-                        <img src="images/Group 1375.png" alt="">
-                        <div class="visit"><p>Visit</p></div>
-                    </div>
-                </div>  
-                <div class="toolCard">
-                    <div class="toolHeader">
-                        <img src="images/vscode.svg">
-                        <div class="toolTitle">
-                            <h2>Visual Studio Code</h2>
-                            <p>Free</p>
-                        </div>
-                     </div>
-                    <div class="toolBody" id="toolBody">
-                        Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
-                    </div>
-                    <div class="toolFooter">
-                        <img src="images/Group 1376 (1).png" alt="">
-                        <img src="images/Group 1375.png" alt="">
-                        <div class="visit"><p>Visit</p></div>
-                     </div>
-                </div>  
-                <div class="toolCard">
-                    <div class="toolHeader">
-                        <img src="images/vscode.svg">
-                         <div class="toolTitle">
-                            <h2>Visual Studio Code</h2>
-                             <p>Free</p>
-                          </div>
-                     </div>
-                    <div class="toolBody" id="toolBody">
-                          Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
-                        </div>
-                    <div class="toolFooter">
-                        <img src="images/Group 1376 (1).png" alt="">
-                         <img src="images/Group 1375.png" alt="">
-                         <div class="visit"><p>Visit</p></div>
-                     </div>
-                 </div>  
-            </div>
-            <div class="loadMoreButton"><a href="#"><b>Load more</b></a></div>
+            <a href=""><div class="loadMoreButton">Load more</div></a>
         </div>
+                
         <div class="mainBrands">
-            <h2><b>Trusted more than 150+ brand</b></h2>
-            <div class="brand">
-                <a href="#"><img src="images/logos_microsoft.png" alt=""></a>
-                <a href=""><img src="images/logos_google.png" alt=""></a>
-                <a href=""><img src="images/logos_slack.png" alt=""></a>
-                <a href=""><img src="images/logos_wordpress.png" alt=""></a> 
+            <div class="brandsContent">
+                <h2><b>Trusted more than 150+ brand</b></h2>
+                <div class="brand">
+                    <a href="#"><img src="images/logos_microsoft.png" alt=""></a>
+                    <a href=""><img src="images/logos_google.png" alt=""></a>
+                    <a href=""><img src="images/logos_slack.png" alt=""></a>
+                    <a href=""><img src="images/logos_wordpress.png" alt=""></a> 
+                </div>
             </div>
         </div>
+
         <div class="newcomerTools">
             <div class="newcomerToolsLeftSide">
                 <h1>Newcomer Tools</h1>
@@ -208,8 +229,8 @@
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                         </div>
                         <div class="cardFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
+                            <div class="footerLike"></div>
+                            <div class="footerFolder"></div>
                             <div class="visitButton"><a href="#">Visit</a></div>
                         </div>
                     </div>
@@ -225,8 +246,8 @@
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                         </div>
                         <div class="cardFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
+                            <div class="footerLike"></div>
+                            <div class="footerFolder"></div>
                             <div class="visitButton"><a href="#">Visit</a></div>
                         </div>
                     </div>
@@ -244,8 +265,8 @@
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                         </div>
                         <div class="cardFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
+                            <div class="footerLike"></div>
+                            <div class="footerFolder"></div>
                             <div class="visitButton"><a href="#">Visit</a></div>
                         </div>
                     </div>
@@ -261,8 +282,8 @@
                             <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
                         </div>
                         <div class="cardFooter">
-                            <img src="images/Group 1376 (1).png" alt="">
-                            <img src="images/Group 1375.png" alt="">
+                            <div class="footerLike"></div>
+                            <div class="footerFolder"></div>
                             <div class="visitButton"><a href="#">Visit</a></div>
                         </div>
                     </div>
@@ -328,7 +349,7 @@
             </div>
             <div class="contributerForm">
                 <input type="text" name="text" class="search" placeholder="Enter your email...">
-                <input type="submit" name="submit" class="submit" value="Join Us">
+                <a href="#"><input type="submit" name="submit" class="submit" value="Join Us"></a>
             </div>
         </div>
     </main>

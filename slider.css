@@ -7,7 +7,7 @@
  * @tutorial https://itchief.ru/javascript/slider
  */
 
- .itc-slider {
+ .itc-slider {  
     position: relative;
     width: 1224px;
     height: 600px;
@@ -28,6 +28,8 @@
   }
   
   .itc-slider__item {
+    display: flex;
+    justify-content: center;
     flex: 0 0 100%;
     max-width: 100%;
     user-select: none;
@@ -38,12 +40,8 @@
   .itc-slider__btn {
     position: absolute;
     margin-top: -250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 48px;
     height: 48px;
-    text-align: center;
     background: #1E252B;
     border: none;
     cursor: pointer;
@@ -55,7 +53,7 @@
   
   .itc-slider__btn_prev {
     background-image: url(images/leftSliderPrev.png);
-    left: 107px;
+    left: -108px;
   }
   .itc-slider__btn_next {
     background-image: url(images/rightSliderPrev.png);
@@ -93,11 +91,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 15;
     display: flex;
     justify-content: center;
-    margin: 0 15%;
-    margin-left: 336px;
     list-style: none;
   }
   
@@ -120,3 +115,43 @@
     background-color: #FF6E30;
   }
   
+
+
+
+  @media screen and (max-width: 1366px){
+
+
+    .itc-slider__btn_prev {
+      background-image: url(images/leftSliderPrev.png);
+      left: -38px;
+    }
+    .itc-slider__btn_next {
+      background-image: url(images/rightSliderPrev.png);
+      right: -38px;
+    }
+    
+  }
+  @media screen and (max-width: 1320px){
+
+
+    .itc-slider__btn_prev {
+      background-image: url(images/leftSliderPrev.png);
+      left: 20px;
+    }
+    .itc-slider__btn_next {
+      background-image: url(images/rightSliderPrev.png);
+      right: 20px;
+    }
+    
+  }
+  @media screen and (max-width: 1220px){
+
+
+    .itc-slider__btn_prev {
+      display: none;
+    }
+    .itc-slider__btn_next {
+      display: none;
+    }
+    
+  }
