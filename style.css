@@ -495,3 +495,141 @@ border-radius: 15px;
     text-align:left;
     margin-right: 60px;
 }
+
+
+.mainContributor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 263px;
+
+}
+.contributionHeader{
+    width: 553px;
+}
+.mainContributor h1{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+}
+.mainContributor p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    margin-top: 25px;
+}
+.contributerForm{
+    display: flex;
+    background: #283036;
+    width: 530px;
+    height: 64px;
+    border-radius: 15px;
+    align-items: center;
+    margin-top: 100px;
+}
+.contributerForm .search{
+    background: #283036;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.38);
+}
+.contributerForm input{
+    border: 0;
+    outline: none;
+}
+.contributerForm .submit{
+    background: #FF6E30;
+    padding: 12px 35px 12px 35px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 180px;
+    width: 130.43px;
+    height: 48px;
+    
+}
+.contributerForm .submit:hover{
+    background: #587298;
+}
+
+
+footer{
+    font-family: 'Poppins';
+}
+.bottomMenu{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 70px; */
+    display: flex;
+    margin-bottom: 98px;
+}
+.bottomMenu:not(:first-child){
+    margin-top: 70px;
+}
+.copyright h3{
+    margin-top: 25px;
+}
+.copyright p{
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 156px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+}
+.companyInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+
+}
+.line{
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    margin-top: 240px;
+}
+.bottomMenu h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px;
+}
+
+.bottomMenu a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 10px;
+}
+.bottomMenu a:hover{
+    color: #FF6E30;
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+}
+.footerLogo h2{
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.9);
+}
