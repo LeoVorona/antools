@@ -6,16 +6,18 @@
 a{
     text-decoration: none;
 }
+
 li{
     list-style: none;
 }
+
 body{
     font-family: 'Poppins';
     font-style: normal; 
-
     background: #1E252B;
     min-width: auto;
 }
+
 header{
     margin-top: 28px;
     font-family: 'Poppins';
@@ -209,7 +211,8 @@ header a:hover, .headerMenu p:hover{
 .submit{
     cursor: pointer;
     background: #FF6E30;
-    padding: 12px 28px 12px 28px;
+    width: 130.43px;
+    height: 48px;
     border-radius: 8px;
     color: white;
     font-weight: 600;
@@ -230,15 +233,36 @@ header a:hover, .headerMenu p:hover{
     margin-top: 110px;
     
 }
-.previewLogo img{
+.previewLogo .face{
     margin:0 8px ;
     height: 58px;
     width: 58px;
+    background: url(images/Group\ 1417.png);
 }
-.previewLogo img:hover{
-    background: #587298;  /* забавно получилось, отсавлю */
+.previewLogo .inst{
+    margin:0 8px ;
+    height: 58px;
+    width: 58px;
+    background: url(images/Group\ 1416.png);
 }
-
+.previewLogo .twit{
+    margin:0 8px ;
+    height: 58px;
+    width: 58px;
+    background: url(images/Group\ 1415.png);
+}
+.previewLogo .face:hover{
+    background: url(images/faceHover.png)
+    
+}
+.previewLogo .inst:hover{
+    background: url(images/insHover.png)
+    
+}
+.previewLogo .twit:hover{
+    background: url(images/twitHover.png)
+    
+}
 
 .mainTools{
     margin-top: 200px;
@@ -297,7 +321,7 @@ header a:hover, .headerMenu p:hover{
     margin-top: -10px;
     margin-bottom: 10px;
     position: relative;
-/*     margin-left: 1px; */
+
 }
 
 .toolCard:hover .toolVisitButton{
@@ -345,7 +369,11 @@ header a:hover, .headerMenu p:hover{
     margin-top: 30px;
 }
 .toolCardFooter .folder{
+    width: 42px;
+    height: 42px;
     margin-left: 12px;
+    cursor: pointer;
+    background:url(images/Group\ 1375.png) ;
 }
 .toolVisitButton{
     width: 106px;
@@ -366,17 +394,15 @@ header a:hover, .headerMenu p:hover{
 }
 .toolCardFooter .like{
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 42px;
     height: 42px;
     background:url(images/inactiveLike.png) ;
-    
-
 }
 .toolCardFooter .like:hover{
     background:url(images/activeLike.png)
+}
+.toolCardFooter .folder:hover{
+    background:url(images/folderHover.png)
 }
 
 
@@ -496,16 +522,12 @@ header a:hover, .headerMenu p:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 288px;
-    height: 284px;
+    width: 292px;
+    height: 288px;
     margin-right: 25px;
 }
 
-/* .card:hover{
-    background-color: rgba(40, 48, 54, 0.6);
-    backdrop-filter: blur(25px);
-    border-radius: 15px;
-} */
+
 .card:hover{
     background:url(images/hover.png)
 }
@@ -559,7 +581,8 @@ header a:hover, .headerMenu p:hover{
 .cardFooter .footerLike{
     width: 42px;
     height: 42px;
-    background:url(images/inactiveLike.png) ;
+    cursor: pointer;
+    background:url(images/inactiveLike.png);
 }
 .cardFooter .footerLike:hover{
     background: url(images/activeLike.png);
@@ -569,6 +592,10 @@ header a:hover, .headerMenu p:hover{
     height: 42px;
     background: url(images/Group\ 1375.png);
     margin-left: 12px;
+    cursor: pointer;
+}
+.cardFooter .footerFolder:hover{
+    background: url(images/folderHover.png);
 }
 .cardFooter img:not(:first-child){
     margin-left: 12px;
@@ -582,7 +609,7 @@ header a:hover, .headerMenu p:hover{
     justify-content: center;
     border-radius: 8px;
 }
-.visitButton a{
+.cardFooter a{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -599,7 +626,6 @@ header a:hover, .headerMenu p:hover{
     margin-left: 295px;
     text-align: left;   
 }
-
 .testimonialSlide .slideText{
     font-family: 'Roboto';
     font-style: normal;
@@ -621,7 +647,6 @@ header a:hover, .headerMenu p:hover{
     align-items: center;
     justify-content: center;
     margin-top: 263px;
-
 }
 .contributionHeader{
     width: 553px;
@@ -685,7 +710,6 @@ footer{
 .bottomMenu{
     display: flex;
     justify-content: center;
-    /* margin-top: 70px; */
     display: flex;
     margin-bottom: 98px;
 }
@@ -729,7 +753,6 @@ footer{
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 10px;
 }
-
 .bottomMenu a{
     font-weight: 500;
     font-size: 16px;
@@ -771,43 +794,73 @@ footer{
     justify-content: center;
     margin-left: -100px;
 }
-.headerLogo{
-    display: flex;
-    align-items: center;
-    margin-left: 157px;
+    .headerLogo{
+        display: flex;
+        align-items: center;
+        margin-left: 157px;
+    }
+
+    .headerNav{
+        display: flex;
+        margin-left: 237px;
+        justify-content: center;
+    }
+
+    .headerNav a:not(:first-child){
+        margin-left: 22px;
+    }
+
+    .account a:not(:last-child){
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.78);
+        opacity: 0.78;
+        margin-left: 173px;
+    }
+
+    .account .SignUpButton{
+        background: #FF6E30;
+        padding: 12px 28px 12px 28px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #D9D9D9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin-left: 21px;
+    }
+    .account a:hover{
+        color: white;
+    }
+
+
 }
+@media screen and (max-width: 1200px){
 
-.headerNav{
-    display: flex;
-    margin-left: 237px;
-    justify-content: center;
-}
+    .headerLogo{
+        display: none;
+    }
+    .account{
+        display: none;
 
-.headerNav a:not(:first-child){
-    margin-left: 22px;
-}
+    }
+    .headerNav{
+        display: flex;
+        justify-content: center;
+        margin-right: 157px;
+    }
 
-.account a:not(:last-child){
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.78);
-    opacity: 0.78;
-    margin-left: 173px;
-}
-
-.account .SignUpButton{
-    background: #FF6E30;
-    padding: 12px 28px 12px 28px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #D9D9D9;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    margin-left: 21px;
-}
-
-
+    .toolCard:not(:last-child){
+        margin-right: 0;
+    }
+    .brandsContent{
+        background: transparent;
+    }
+    .brand{
+        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+    }
 
 }
