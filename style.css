@@ -25,18 +25,19 @@ header{
     align-items: center;
     justify-content: center;
 }
-.headerLogo{
-    display: flex;
-    align-items: center;
-    margin-left: 157px;
-}
-.headerLogo h2{
+.headerLogo a{
     margin-left: 10px;
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
     color: rgba(255, 255, 255, 0.9);
 }
+.headerLogo{
+    display: flex;
+    align-items: center;
+    margin-left: 157px;
+}
+
 .headerNav{
     display: flex;
     margin-left: 257px;
